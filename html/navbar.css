@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+}
+   /* css for top */
+   #top{
+       display: flex;
+       justify-content: right;
+       align-items: center;
+       width: 100%;
+       margin: auto;
+       height:2rem;
+      background: url("https://adn-static1.nykaa.com/media/wysiwyg/2021/topstrips18.jpg");
+   }
+   #top>div{
+       width: 9%;
+       height: 70%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       border: 2px solid black;
+       border-bottom: 0px;
+       border-top: 0px;
+       color: #252525;
+       border-left: 0px;
+   }
+   #top>div>p{
+       margin-left: 5px;
+       color: black;
+   }
+  #top>div:last-child{
+      border-right: 0px;
+  }
+   /* css for middle navbar */
+   #middle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 4rem;
+        margin: auto;
+        border: 1px solid rgb(236, 234, 234);
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+   }
+   #middle>.text{
+         width: 9%;
+         height: 60%;
+         font-size: 14px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         color: #03021A;
+         font-weight: bold;
+         font-family: sans-serif;
+      }
+      #middle>.text:hover{
+          color: deeppink;
+      }
+     #text{
+         width: 9%;
+         height: 60%;
+         font-size: 14px;
+         display: flex;
+         margin-left: 20px;
+         justify-content: center;
+         align-items: center;
+         color: #03021A;
+         font-weight: bold;
+         font-family: sans-serif;
+     }
+       .account{
+       width: 9%;
+         height: 60%;
+         margin-left: 40px;
+         font-size: 14px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+      #logo{
+       width: 100%;
+       height: 100%;
+      }
+      .account>p{
+          margin-left: 5px;
+          color: #03021A;
+         font-family: sans-serif;
+      }
+      .account>i{
+          font-size: 20px;
+       
+      }
+      .card
+        {
+          width: 2%;
+         height: 60%;
+         font-size: 14px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+      .card>i{
+          font-size: 20px;
+      }
+
+   .search{
+       width: 20%;
+       height: 60%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-left: 70px;
+   }
+   .search>input{
+       padding: 10px 50px;
+   }
+   .search >input:focus{
+      
+       
+   }
+   /* css for buttom navbar creation  */
+            
+     nav{
+         background-color: black;
+         height: 40px;
+         background-color: white;
+         border-top: 1px solid rgb(223, 220, 220);
+         border-bottom: 1px solid  rgb(223, 220, 220);
+     }
+     nav ul{
+        text-align: center;
+        position: relative;
+        margin: 0;
+        padding: 0;
+      }
+     nav li{
+         list-style: none;
+         display: inline-flex;
+         color: #03021A;
+         font-family: sans-serif;
+         padding: 12px 15px 0px 15px;
+     }
+     nav li{
+         display: inline-block;
+     }
+    
+     nav a{
+         text-decoration: none;
+         color: #03021A;
+     }
+     nav a:hover{
+         color: deeppink;
+         
+     }
+     #sub-menu
+     {
+         position: absolute;
+         background-color: rgb(255, 255, 255);
+         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+         display: none;
+         width: auto;
+     }
+     nav li:hover #sub-menu{
+         display: block;
+     }
+     .menu-title
+     {
+         margin: 1.3em 0 0 -5em;
+     }
+     .menu-title:first-of-type{
+         margin-top: 5px;
+         margin-left: -60px;
+     }
+     .menu-title a{
+         color: rgb(70, 69, 69);
+     }
+     .menu-title:hover{
+            text-decoration: underline;
+     }
+     #sub-menu li{
+         display: block;
+     }
+     #sub-menu>ul{
+         margin-bottom: 10px;
+     }
+     .menu-col1 ul li{
+         font-size: 14px;
+         margin-top: -8px;
+         text-align: left;
+     }
+     .menu-col2 ul li{
+        font-size: 14px;
+        margin-top: -5px;
+        text-align: left;
+    }
+    .menu-col3 ul li{
+        font-size: 14px;
+        margin-top: -5px;
+        text-align: left;
+    }
+    .menu-col4 ul li{
+        font-size: 14px;
+        margin-top: -5px;
+        text-align: left;
+    }
+    .menu-col5 ul li{
+        font-size: 14px;
+        margin-top: -5px;
+        text-align: left;
+    }
+     #sub-menu ul li a{
+         color: #03021A;
+         font-weight: 300px;
+     }
+     #sub-menu ul li a:hover{
+         color: deeppink;
+     }
+     .menu-col1,.menu-col2,.menu-col3,.menu-col4,.menu-col5{
+        float: left;
+     }
+     .menu-col1{
+         width: 20%;
+     }
+
+
+   /* makeup div creation  */
+  
+
+   @media all and (min-width:380px) and (max-width:970px)
+   {
+       #top>div>p{
+       font-size: 12px;
+   } 
+   #top>div{
+       width: 15%;
+   }
+   #top>div>i{
+       font-size: 10px;
+   }
+   #middle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 4rem;
+        margin: auto;
+   }
+   #middle>.text{
+       font-size: 10px;
+      }
+     #logo{
+         width: 70%;
+         height: 70%;
+     }
+     .search>input{
+       padding: 5px 20px;
+   }
+   .search{
+       width: 10%;
+       height: 50%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-left: 70px;
+   }
+   .account{
+       width: 5px;
+       margin-left: 120px;
+   }
+   .account>i{
+       font-size: 10px;
+   }
+   .card>i{
+       font-size: 10px;
+       margin-left: 100px;
+   }
+   #bottom>div{
+    width: 10%;
+    display: flex;
+    font-size: 10px;
+    font-family: sans-serif;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40%;
+}
+#bottom>div:hover{
+    color: rgb(236, 13, 169);
+}
+.skin,.hair{
+    margin-right: 0px;
+}
+.frag,.lux{
+    margin-left: 0px;
+}
+}
